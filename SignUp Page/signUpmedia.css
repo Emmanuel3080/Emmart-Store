@@ -1,0 +1,10 @@
+@media(max-width:700px){
+    body{
+        overflow: hidden;
+    }
+    .signup-container {
+        /* background: red; */
+        transform: translateX(1%);
+        overflow-x: hidden;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmart Sign|In Page</title>
+  
+    <link rel="stylesheet" href="./signIn.css" />
+     
+    <link rel="stylesheet" href="./signInMedia.css">
+    
+  </head>
+  <body>
+    <!-- From Uiverse.io by Smit-Prajapati -->
+    <div class="container">
+      <div class="welcomeText">
+        <h3 class="heading">Welcome Back To Emmart</h3>
+        <!-- <h3 class="signIn">Sign In</h3> -->
+      </div>
+      <form  class="form">
+        <input
+          required=""
+          class="input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-mail"
+        />
+        <input
+          required=""
+          class="input"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="****"
+        />
+        <p id="errorMessage"></p>
+        <div class="check">
+          <input type="checkbox" id="showPassword" />
+          <h3 class="text">Show Password</h3>
+        </div>
+
+        <div class="submit">
+          <button id="loginBtn" type="submit">
+              <span class="textCart">Sign In</span>
+ <span class="spinner-border spinner-border-sm  loader d-none " role="status">
+  <span class="visually-hidden"></span>
+</span>
+          </button>
+        </div>
+
+        <div class="newAccount">
+          <span class="signUp-password"
+            >Don't have an account ?
+            <a href="../SignUp Page/SignUp.html">Sign Up</a></span
+          >
+        </div>
+      </form>
+    </div>
+
+
+
+    
+
+    <script src="./signIn.js" type="module"></script>
+  </body>
+</html>

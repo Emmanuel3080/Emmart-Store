@@ -1,0 +1,133 @@
+@media(max-width:928px){
+    .header{
+        /* background-color: red; */
+    }
+     .navbar{
+        margin: auto;
+        width: 100%;
+    }
+}
+@media(max-width:892px){
+    .navbar{
+        margin: auto;
+        width: 90%;
+    }
+    .logoImage{
+         width: 100px;
+  height: 100px;
+    }
+}
+@media(max-width:764px){
+    .navbar{
+        margin: auto;
+        width: 100%;
+    }
+    .navList .navMenu .navtext{
+        font-size: 17px;
+        line-height: 20px;
+    }
+}
+@media(max-width:691px){
+    .navbar{
+        margin: auto;
+        width: 100%;
+    }
+    .navList .navMenu{
+  
+    }
+    .logoImage{
+         /* background-position: right center; */
+    }
+     .navList .navMenu .navtext{
+        font-size: 15px;    
+        /* line-height: 15px; */
+    }
+}
+@media(max-width:606px){
+    .navbar{
+        margin: auto;
+        width: 100%;
+    }
+     .navList .navMenu .navtext{
+        /* font-size: 12px;     */
+        /* line-height: 15px; */
+        /* display: none; */
+    }
+}
+@media(max-width:569px){
+    
+      .toggle-button{
+    display: flex;
+   }
+      .navMenu {
+        /* display: none; */
+        position: absolute;
+        /* background-color: purple; */
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        /* background-color: black; */
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        background-color: palegoldenrod;
+        /* margin-left: auto; */
+        transition: all 0.3s ease-in-out;
+        height: 250px;
+        z-index: 999;
+        padding: 10px;
+    }
+     .navMenu{
+        /* background-color: rebeccapurple; */
+        padding: 10px;
+     }
+    .nav-show{
+        right: 0;
+    }
+    .navList .navMenu .navtext{
+        /* background-color: yellow; */
+        /* width: 100%; */
+        text-align: center;
+        color: black;
+         line-height: 10px;
+    }
+ 
+    .menuBtn{
+        display: block;
+    }
+    #logOutSession{
+        /* background-color: red; */
+        display: none;
+        /* margin-top: 100px; */
+        /* z-index: 99; */
+        
+        /* position: absolute; */
+        
+    }
+     .toggleNav{
+         position: absolute;
+         right: 100%;
+        }
+        .toggleShow{
+            
+            display: block;
+    }
+   
+}
+
+
+
+@media(max-width:912px){
+    .body{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .aboutImg{
+        margin-left: 10px;
+        width: 100vw;
+    }
+    .aboutImage{
+        padding: 10px;
+    }
+}

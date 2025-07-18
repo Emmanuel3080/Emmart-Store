@@ -1,0 +1,302 @@
+@media(max-width:928px){
+    .header{
+        /* background-color: red; */
+    }
+     .navbar{
+        margin: auto;
+        width: 100%;
+    }
+}
+@media(max-width:892px){
+    .navbar{
+        margin: auto;
+        width: 90%;
+    }
+    .logoImage{
+         width: 100px;
+  height: 100px;
+    }
+}
+@media(max-width:764px){
+    .navbar{
+        margin: auto;
+        width: 100%;
+    }
+    .navList .navMenu .navtext{
+        font-size: 17px;
+        line-height: 20px;
+    }
+}
+@media(max-width:691px){
+    .navbar{
+        margin: auto;
+        width: 100%;
+    }
+    .navList .navMenu{
+  
+    }
+    .logoImage{
+         /* background-position: right center; */
+    }
+     .navList .navMenu .navtext{
+        font-size: 15px;    
+        /* line-height: 15px; */
+    }
+}
+@media(max-width:606px){
+    .navbar{
+        margin: auto;
+        width: 100%;
+    }
+     .navList .navMenu .navtext{
+        /* font-size: 12px;     */
+        /* line-height: 15px; */
+        /* display: none; */
+    }
+}
+@media(max-width:623px){
+    
+      .toggle-button{
+    display: flex;
+   }
+      .navMenu {
+        /* display: none; */
+        position: absolute;
+        /* background-color: purple; */
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        /* background-color: black; */
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        background-color: palegoldenrod;
+        /* margin-left: auto; */
+        transition: all 0.3s ease-in-out;
+        height: 250px;
+        z-index: 999;
+        padding: 10px;
+    }
+     .navMenu{
+        /* background-color: rebeccapurple; */
+        padding: 10px;
+     }
+    .nav-show{
+        right: 0;
+    }
+    .navList .navMenu .navtext{
+        /* background-color: yellow; */
+        /* width: 100%; */
+        text-align: center;
+        color: black;
+         line-height: 10px;
+    }
+ 
+    .menuBtn{
+        display: block;
+    }
+    #logOutSession{
+        /* background-color: red; */
+        display: none;
+        /* margin-top: 100px; */
+        /* z-index: 99; */
+        
+        /* position: absolute; */
+        
+    }
+     .toggleNav{
+         position: absolute;
+         right: 100%;
+        }
+        .toggleShow{
+            display: block;
+    }
+   
+}
+@media(max-width:714px){
+    .selectBody{
+        margin: auto;
+        width: 100%;
+         padding: 2rem 1rem;
+         gap :5px;
+    }
+}
+@media(max-width:586px){
+    .selectBody{
+        margin: auto;
+        width: 100%;
+         /* padding: 2rem 1rem; */
+         /* gap :5px; */
+    }
+}
+
+
+/* Hero Section */
+
+@media(max-width:716px){
+   
+    .heroImage{
+        width: 300px;
+    }
+}
+
+@media(max-width:577px){
+    .heroSection{
+        flex-direction: column-reverse;
+        
+    }
+     .heroImage{
+        width: 300px;
+    }
+    .imageline{
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+/* Images */
+
+
+@media(max-width:818px){
+    .itemSection{
+        width: 200px;
+         /* position: fixed; */
+  top: 200px;
+  height:60dvh;
+    }
+    .itemSlide{
+        right: -17px;
+    }
+    .food-item{
+            /* width: 80%; */
+            margin-left: -20px;
+    }
+    .addsFood{
+        display: flex;
+        /* justify-content: baseline; */
+    }
+    .addFood{
+        padding: 10px 1px;
+        width: 100px;
+        font-weight: 400;
+    }
+    .delBtn{
+    font-weight: 400;
+      padding: 10px 10px;
+}
+.proceedCheckoutBtn{
+     font-weight: 100;
+     padding: 2px 7px;
+}
+
+}
+@media(max-width:355px){
+    .food-items{
+        width: 80%;
+        /* margin-left: -20px; */
+    }
+    .mediaFood{
+        /* width: 0%; */
+    }
+    .displaySlide{
+     display: none;
+    }
+     .addFood{
+        padding: 10px 1px;
+        width: 100px;
+        font-weight: 200;
+    }
+    .delBtn{
+    font-weight: 200;
+      padding: 10px 10px;
+}
+.proceedCheckoutBtn{
+     font-weight: 100;
+     padding: 2px 7px;
+}
+}
+
+@media(max-width:500px){
+    .displayFood{
+        display: grid;
+         grid-column-gap: 2.4rem;
+  grid-row-gap: 2rem;
+         margin: 5px;
+    }
+    .images{
+/* width: 60%; */
+height: 200px;
+    }
+    .foodText{
+         display: grid;
+  grid-template-columns: repeat(1,2fr);
+  gap: 10px;
+    }
+   
+}
+
+
+
+
+
+
+
+
+/* Modal CheckOut */
+
+@media(max-width:931px){
+    .orderBody{
+        /* display: flex; */
+        flex-direction: column;
+          padding: 1rem 3rem;
+          /* max-width: 100%; */
+    }
+    #proceedModal .modal-dialog {
+  max-width: 90%;
+  height: 100dvh; 
+  margin-left: 10px;
+}
+#myOrderHistory .modal-dialog {
+  max-width: 90%;
+  height: 100dvh; 
+  /* margin-left: 10px; */
+}
+.orderCard{
+    /* flex-direction: column; */
+    /* justify-content: left; */
+}
+.cardss{
+  width: 60px;
+  height: 80px;
+  border-radius: 10px;
+}
+}
+
+
+
+
+
+
+@media(max-width:822px){
+    .features{
+        margin: auto;
+        width: 90%;
+        /* padding: 10px; */
+         margin:2rem auto;
+    }
+}
+@media(max-width:573px){
+    .features{
+        flex-direction: column;
+    }
+}
+
+
+
+/* @media(max-width:) */

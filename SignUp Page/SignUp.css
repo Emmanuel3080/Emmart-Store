@@ -1,0 +1,137 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'); */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  /* background: #dddee0b5; */
+   background-image: url("../Images/portrait-man-practicing-his-profession-celebrate-international-labour-day.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+  /* margin-top: 20px; */
+  margin: 0;
+  width: 100%;
+ 
+}
+
+.signup-container {
+  background: rgba(255, 255, 255, 0.557);
+  background:  linear-gradient(0deg, rgba(255, 255, 255, 0.292) 0%, rgb(244, 247, 251) 100%);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   box-shadow: rgba(61, 14, 215, 0.878) 0px 30px 30px -20px;
+  width: 400px;
+  transform: translateX(-25%);
+  /* overflow: hidden; */
+}
+label{
+    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.signup-container h2  {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background-image: url("../Images/portrait-man-practicing-his-profession-celebrate-international-labour-day.jpg");
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    color:transparent;
+    background-clip:text ;
+    -webkit-background-clip: text;
+    font-size:29px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all 0.4s ease-in-out;
+    letter-spacing: 0.125rem;
+    text-shadow: 0px 0px 15px rgba(232, 125, 87, 0.783);
+}   
+.signUp{
+ text-align: center;
+  background-image: url("../Images/portrait-man-practicing-his-profession-celebrate-international-labour-day.jpg");
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    color:transparent;
+    background-clip:text ;
+    -webkit-background-clip: text;
+    font-size:29px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all 0.4s ease-in-out;
+    letter-spacing: 0.125rem;
+    text-shadow: 0px 0px 15px rgba(232, 125, 87, 0.783);
+}
+.signup-container form input {
+  display: block;
+  /* flex: ; */
+  /* width: 100%; */
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inputField {
+  width: 100%;
+  border-radius: 10px;
+}
+.signup-container button {
+  width: 100%;
+  padding: 10px;
+  background: #4f46e5;
+  background-color:#928102e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  /* transition: background 0.3s ease-in-out; */
+
+}
+#btn:disabled{
+cursor: not-allowed;
+}
+#errorMessage{
+    text-align: left;
+    font-size: 14px;
+    font-family: serif;
+    color: red;
+}
+.signup-container button:hover {
+  background: #dacb55e2;
+}
+
+.signup-container p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.signup-container a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: lighter;
+}
+/* #name{
+    display: none;
+} */
+
+.check {
+  display: flex;
+  padding-top: 10px;
+  gap: 5px;
+}
+.text {
+  font-size: 12px;
+  font-weight: lighter;
+}

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmart Home</title>
+    <link rel="icon" type="image/png" href="../Images/LOGO.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dashboard.css">
+     <link rel="stylesheet" href="./dashboardMedia.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+   
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+<body>
+ 
+
+
+
+  <!-- Header Section -->
+      <header class="header">
+      <nav class="navbar">
+        <div class="logoImagess">
+          <img src="../Images/LOGO-removebg-preview.png" alt="" class="logoImage">
+        </div>
+         <a href="" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span> 
+             </a>
+        <div class="navList">
+          <ul class="navMenu ">
+            
+            <li><a href="" class="navtext">Home</a></li>
+            <li><a href="../aboutUs/aboutUs.html" class="navtext">About</a></li>
+            <li><a href="#" class="navtext" >Blog</a></li>
+            <li><a href="#" class="navtext" id="viewCart">View Cart</a></li>
+            <li><a href="#" class="navtext" >Contact Us</a></li>
+          </ul>
+        </div>
+          <div class="logout">
+            <button id="logOutSession">Log Out</button>
+          </div>
+
+<!-- Toogle Bar Display -->
+
+    <ul class="toggleNav">
+          <a href="" class="closeNav">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+             </a>
+  <li><a href="" class="navtext">Home</a></li><br>
+  <li><a href="../aboutUs/aboutUs.html" class="navtext">About</a></li><br>
+  <li><a href="#" class="navtext" >Blog</a></li><br>
+  <li><a href="#" class="navtext">Contact Us</a></li><br>
+  <li><a href="#" class="navtext" id="viewCart">View Cart</a></li>
+ <!-- Logout button here -->
+   <li class="logoutBtnWrapper">
+    <button id="logOut">Log Out</button>
+  </li>
+</ul>
+      </nav>
+    </header>
+
+
+    <!-- End Of Header -->
+
+   
+
+    <!-- Cart Body: User Information -->
+    <div class="cartOption">
+     
+    <div class="notifyBtn">
+        <button id="previousOrder">Check Previous Orders</button>
+        <div class="cartClick" style="display: flex;">
+          <img src="../Images/cart.png" alt="" class="cartImg" /> 
+          <div class="count">
+            <p class="countText"></p>
+          </div>
+
+        </div>
+          </div>
+      
+    </div>
+
+    <!-- End of cart Body -->
+
+
+
+
+<!-- Hero Carousel Section -->
+<section class="heroSection">
+  <div class="imageline">
+    <!-- <img src="../Images/Group 1000002057.png" class="heroLine" alt=""> -->
+     <h1 class="heroHeader">Delicious Meals Delivered to Your Door</h1>
+    <p class="heroText"> <span class="heroSpan">The</span> Art of speed Food Speed Quality.
+      Explore a wide variety of fresh, healthy, and tasty meals made just for you.
+      From local favorites to global dishes 
+        <strong>Emmart</strong> brings flavor home.</p>
+
+
+         <a href="#menu" class="btn btn-danger">Order Now</a>
+      <a   href="#" class="btn btn-primary"  id="viewCartBtn">View Cart</a>
+  </div>
+  <div class="bodyImage">
+    <img src="../Images/Image.png" class="heroImage" alt="">
+  </div>
+</section>
+<!-- End of hero Section -->
+
+
+
+
+      <!-- Select Meal Category -->
+<section class="body" id="menu">
+    <div class="category">
+      <h1 class="categoryTitle">Food Categories</h1>
+    </div>
+    <div class="selectBody">   
+    <!-- <select name="" id="">Select A M</select> -->
+    <select name="Select a meal" id="mealSelect" class="animated-select">
+       <option value="Select a meal">Meal</option>
+  <option value="rice">Rice</option>
+  <option value="pasta">Pasta</option>
+  <option value="beef">Beef</option>
+  <option value="burger">Burger</option>
+  <option value="pizza">Pizza</option>
+  <option value="salad">Salad</option>
+  <option value="soup">Soup</option>
+  <option value="fish">Fish</option>
+  <option value="sandwich">Sandwich</option>
+  <option value="noodles">Noodles</option>
+  <option value="bread">Bread</option>
+  <option value="egg">Egg</option>
+  <option value="beans">Beans</option>
+  <option value="yam">Yam</option>
+  <option value="cake">Cake</option>
+  <option value="vegetables">Vegetables</option>
+  <option value="smoothie">Smoothie</option>
+  <option value="fruits">Fruits</option>
+    </select>
+    <select name="couisine" id="couisine" class="animated-select">
+  <option value="Select Cuisine Type">Cuisine Type</option>
+   <option value="American">American</option>
+  <option value="Chinese">Chinese</option>
+  <option value="Eastern Europe">Eastern Europe</option>
+  <option value="French">French</option>
+  <option value="Indian">Indian</option>
+  <option value="Italian">Italian</option>
+  <option value="Japanese">Japanese</option>
+  <option value="South American">South American</option>
+  <option value="South East Asian">South East Asian</option>
+  <option value="African">African(Limited)</option>
+</select>
+
+<select id="vegCategorySelect" class="animated-select">
+  <option value="vegetarian">Vegetarian</option>
+  <option value="vegan">Vegan</option>
+  <option value="gluten-free">Gluten-Free</option>
+  <option value="dairy-free">Dairy-Free</option>
+  <option value="egg-free">Egg-Free</option>
+   <option value="low-sugar">Low Sugar</option>
+  <option value="paleo">Paleo</option>
+  <option value="keto-friendly">Keto Friendly</option>
+  <option value="peanut-free">Peanut-Free</option>
+  <option value="tree-nut-free">Tree Nut-Free</option>
+</select>
+</div>
+
+
+    <!-- Food Search Field -->
+  <form  id="inputForm">
+    <input type="text" placeholder="Filter by search" class="inputField"> 
+    <button  type="submit" id="searchBtn"><img src="../Images/search.png" alt=""> </span>
+ <span class="spinner-border spinner-border-sm  loaders d-none" role="status">
+  <span class="visually-hidden"></span>
+</span></button>
+</form>
+<!--  End of Input Search Field-->
+
+<div class="cartBody">
+  <!-- Food Display -->
+<div class="displayFood">   
+
+
+    </div>
+
+    <div class="itemSection">
+<!-- Cart Item Body -->
+
+
+      <div class="itemText">
+        <p class="cartValue"></p>
+
+
+
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Cart Message After an item has been added -->
+    <div class="modal modal fade" tabindex="-1" id="myModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5">----</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- <p>Modal body text goes here.</p> -->
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- End  Cart Message After an item has been added -->
+
+
+
+
+<!-- My Traditional Meals -->
+<div class="traditionalHeader">
+  <h1 class="traditionalTitle">Traditional <span class="spanText">Meals</span> </h1>
+  <p class="tradParagrapgh"> Customer favorites - the most loved traditional dishes prepared with authentic recipes</p>
+  <p class="fetchIng"></p>
+</div>
+
+   <div class="popularMeals">
+   
+   </div>
+
+
+   <!-- End of popular Meals -->
+
+
+   
+
+
+   <!-- Proceed to checkOut form -->
+    <div class="modal modal fade" tabindex="-1" id="proceedModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-titl fs-5"> CheckOut Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="proceed-body">
+
+
+        <div class="modalInfo">
+        
+        </div>
+
+
+        <div class="orderBody">
+          <div class="orderSummary">  
+        <p class="itemProceedext"> <strong>Order Summary </strong> <span id="modalItems">0</span></p>
+          <p>Total Items: <span id="modalItemCount">0</span></p>
+   <p><strong>Subtotal:</strong> <span id="modalTotalAmount">0</span></p>
+
+   <a href="../DashBoardPage/dashboard.html">
+     <button class="continueShopping"> Continue Shopping ⏭️</button>
+   </a>
+          </div>
+
+<hr>
+
+          <div class="formCheckout">
+
+             <h3 class="itemProceedext"> <strong>Make Payment </strong></h3>
+            <!-- <div class="imgBodyss">
+    <img src="../Images/6048063-removebg-preview.png" alt="" class="cardss">
+    <img src="../Images/card2-removebg-preview.png" alt="" class="cardss">
+    <img src="../Images/47653-removebg-preview.png" alt="" class="cardss">
+   </div> -->
+
+   <hr>
+ <form action="" id="checkOutForm">
+          <div class="checkName">
+            <label for="">Cardholder Name</label><br>
+            <input type="text" required id="holderName" class="checkInput"><br>
+            <label for="">Card Number</label><br>
+            <input type="text" required id="cardNumber" class="checkInput"><br>
+            <p id="checkCard"></p>
+          </div>
+          <div class="amountBody" style="display: flex; gap: 10px; flex-wrap: wrap ">
+            <div class="expiry">
+              <label for="">Expiry Date</label><br>
+              <input type="date" required id="expiryDate" class="checkInput"><br>
+            </div>
+            <div class="cvv">
+    <label for="">CVV</label><br>
+    <input type="password" placeholder="***" required id="cvvText" class="checkInput">
+    <p id="checkCvv"></p><br><br>  
+          </div>
+          </div>
+          <label for="">Amount To be Paid</label><br>
+          <input type="text" placeholder="" id="totalInputPrice"  class="checkInput" required readonly><br><br><br>
+          <div class="submitBtn">
+            <button type="submit" id="proceedSubmitBtn"> Confirm Order<span class="spinner-border spinner-border-sm  loadingProceed  d-none" role="status">
+  <span class="visually-hidden"></span></button>
+          </div>
+        </form>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <p>Are you ready to complete your order?</p>
+        <button type="submit" class="btn btn-primary" >Confirm Order</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- End Of Check Out -->
+
+
+
+<!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <div class="feature-content">
+        <div class="featureHeader">
+          <div class="feature-icon">🛒</div>
+          <h3 class="featureTitle">Seamless Shopping</h3>
+          <p class="featureParagraph">Fast checkout and smooth browsing</p>
+          <p class="featureParagraph">Designed to get you what you need, faster and easier. From intuitive navigation </p>
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-content">
+         <div class="featureHeader">
+          <div class="feature-icon">🥗</div>
+          <h3 class="featureTitle">Quality Ingredients</h3>
+          <p class="featureParagraph">Premium, locally sourced ingredients</p>
+          <p class="featureParagraph">We use only the finest, authentic ingredients from trusted local suppliers.</p>
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-content">
+        <div class="featureHeader">
+           <div class="feature-icon">💬</div>
+          <h3 class="featureTitle">Customer Support</h3>
+          <p class="featureParagraph">24/7 dedicated support</p>
+          <p class="featureParagraph">Our customer care team is always available to help you—day or night.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Features Section -->
+
+
+
+  <!-- Testimonial Section -->
+  <div class="testimonials-section">
+  <h2 class="testimonial-heading">What Our Customers Say</h2>
+  <div class="testimonial-wrapper">
+    <!-- Testimonials will go here -->
+  </div>
+</div>
+ <!-- Testimonial Section -->
+
+
+
+ <!-- Subscribe Section -->
+    <section class="subscribe">
+      <div class="subscribeBody">
+       <h1 class="subscribeHeader">Subscribe now to stay in loop</h1> 
+       <p class="subscribeParagraph"> Join our newsletter and be the first to discover exclusive offers, the latest arrivals, and insider news on the world of luxury watches. Sign up today and elevate your style with Emmart!</p>
+       <div class="subsribeEmail">
+        <input type="email" placeholder="Email" id="subEmail">
+         <button type="submit" id="subBtn">Submit</button>
+      </div>
+       </div>
+       
+    </section>
+    <!-- End Of Subscribe Section -->
+
+
+
+
+
+
+    <!-- Order History -->
+ <div class="modal modal fade" tabindex="-1" id="myOrderHistory" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-titl fs-5"> Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="order-body">
+
+        <p><strong>Number of Orders: </strong> <span id="orderText"></span></p>
+        <p><strong>Total Number of Items: </strong> <span id="orderItemsCount"></span></p>
+        <p><strong>Sub Total: </strong> <span id="orderPriceCount"></span></p>
+
+        <div class="userOrders">
+
+        </div>
+       
+      
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <p>Are you ready to complete your order?</p>
+        <button type="submit" class="btn btn-primary" >Confirm Order</button>
+      </div> -->
+    </div>
+  </div>
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footerSection">
+        <div class="footerElement">
+          <h1 class="footerHeader">Product</h1>
+          <a href="" class="footerNav">Features</a>
+          <a href="" class="footerNav">Tutorials</a>
+          <a href="" class="footerNav">Pricing</a>
+          <a href="" class="footerNav">Releases</a>
+        </div>
+        <div class="footerElement">
+          <h1  class="footerHeader">Company</h1>
+          <a href="" class="footerNav">About</a>
+          <a href="" class="footerNav">Press</a>
+          <a href="" class="footerNav">Careers</a>
+          <a href="" class="footerNav">Contacts</a> 
+          <a href="" class="footerNav">Partners</a>
+        </div>
+        <div class="footerElement">
+            <h1  class="footerHeader">Follow Us</h1>
+           <a href="" class="footerNav">Facebook</a>
+          <a href="" class="footerNav">Twitter</a>
+          <a href="" class="footerNav">Dribble</a>
+          <a href="" class="footerNav">Instagram</a>
+          <a href="" class="footerNav">Linkedin</a>
+        </div>
+        <div class="footerElement">
+          <h1  class="footerHeader">Contact Us</h1>
+          <p class="footerNav"> <b>Address</b>: 123 Food Street,  Iwo Road
+Ibadan , Nigeria</p>
+<p>Phone: 08131203872</p>
+<p>Email: emmanuelabiodun0@gmail.com</p>
+<div class="logoSocial">
+  <div class="socials">
+    <img src="../Images/social_15707749.png" alt="" srcset="" class="social">
+  </div>
+  <div class="socials">
+    <img src=" ../Images/linkedin_4494498.png" alt="" srcset=""  class="social">
+  </div>
+  <div class="socials">
+    <img src="../Images/twitter_4401446.png" alt="" srcset=""  class="social">
+  </div>
+
+</div>
+
+          
+        </div>
+        
+        <!-- <div class="footerElement"></div> -->
+      </div>
+      
+         <form id="reviewForm" >
+  <h4 class="revMessage">Leave a Review</h4>
+  <textarea id="reviewMessage" rows="3" cols="50" placeholder="Write your review here..." required></textarea>
+  <br>
+
+   <label for="reviewRating">Rating:</label>
+  <select id="reviewRating" required>
+    <option value="">Ratings</option>
+    <option value="5">⭐⭐⭐⭐⭐</option>
+    <option value="4">⭐⭐⭐⭐</option>
+    <option value="3">⭐⭐⭐</option>
+    <option value="2">⭐⭐</option>
+    <option value="1">⭐</option>
+  </select>
+
+  <button type="submit" class="btn btn-primary rev mt-2"><span class="reviewText">Submit Review</span>
+ <span class="spinner-border spinner-border-sm  revloader d-none " role="status">
+  <span class="visually-hidden"></span>
+</span></button>
+  
+</form>
+
+      <div class="copy">
+    <p> © 2025 <span class="emmartStyle"> Emmart</span>.All rights reserved. </p>  
+ 
+      </div>
+    </footer>
+
+
+
+     <!-- End Of Footer Section -->
+
+   <!-- <section id="about"></section> -->
+
+
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <script src="./dashboard.js" type="module" defer></script>
+</body>
+</html>
