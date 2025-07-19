@@ -74,8 +74,9 @@ const reviewLoader = document.querySelector(".revloader");
 
 const reviewMessage = document.getElementById("reviewMessage");
 const reviewForm = document.getElementById("reviewForm");
-const AppId = "2043da85";
-const AppKey = `408028f9deb72737b293f2a22905ed11
+const AppId = "d0c93511";
+const AppKey = `
+2a1156174ad4b9be872456f9225f4ad1
 `;
 let myName;
 let foodList = [];
