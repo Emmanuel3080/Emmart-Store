@@ -952,7 +952,7 @@ const CheckOutItemPayment = async () => {
 
     if (cartDocs) {
       alert("Order placed successfully! Thank you for your purchase.🤑");
-      window.location.href = "../DashBoardPage/dashboard.html";
+      window.location.href = "./index.html";
     }
   
   } catch (error) {

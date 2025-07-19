@@ -40,7 +40,7 @@ const userLoginSession = async () => {
 
     if(userCredentials){
         alert("Sign In Succesful")
-        window.location.href = "../DashBoardPage/dashboard.html"
+        window.location.href = "../index.html"
     }
   } catch (error) {
     errorMessageEl.textContent = "";

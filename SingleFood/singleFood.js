@@ -105,7 +105,7 @@ const singleFood = async () => {
       <span class="icon">    ★★★★★ </span>
       <span style="font-size: 0.9rem; color: #666;">(Customer Reviews)</span>
     </div>
-    <a href="../DashBoardPage/dashboard.html">
+    <a href="../index.html">
     <button class="btnsss">Continue Shopping⏭️</button>
     </a>
   </div>`;
