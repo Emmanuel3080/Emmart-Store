@@ -38,7 +38,7 @@ onAuthStateChanged(auth, async(user)=>{
         
     }
     else{
-        window.location.href = "../SignIn Page/signIn.html"
+        window.location.href = "../SignIn Page/index.html"
     }
 })
 
@@ -59,5 +59,5 @@ closeNav.addEventListener("click", (e) => {
 
 
 viewMoreBtn.addEventListener("click",()=>{
-  window.location.href = "../DashBoardPage/dashboard.html"
+  window.location.href = "../index.html"
 })
