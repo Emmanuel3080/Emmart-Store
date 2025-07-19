@@ -57,7 +57,7 @@ const signUserUp = async () => {
       });
       await sendEmailVerification(userCredentials)
       alert("Succesful Sign Up");
-      window.location.href = "../SignIn Page/signIn.html";
+      window.location.href = "../SignIn Page/index.html";
     }
   } catch (error) {
     errorMessageEl.textContent = "";
