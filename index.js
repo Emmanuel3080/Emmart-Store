@@ -118,7 +118,7 @@ onAuthStateChanged(auth, async (user) => {
     // arrangeMeal();
     // showOrders()
   } else {
-    window.location.href = "../SignIn Page/signIn.html";
+    window.location.href = "./SignIn Page/index.html";
   }
 });
 
