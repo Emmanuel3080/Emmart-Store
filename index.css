@@ -328,7 +328,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.178)) ,url("./Images/portrait-man-practicing-his-profession-celebrate-international-labour-day.jpg");
+  background-image:url("./Images/portrait-man-practicing-his-profession-celebrate-international-labour-day.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
