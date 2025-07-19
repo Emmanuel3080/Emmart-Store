@@ -323,7 +323,7 @@
  } */
 .heroSection{
   padding-top: 10rem;
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   align-items: center;
   justify-content: center;
