@@ -174,7 +174,7 @@ const defualtMeal = async () => {
       <p  class="overviewText">Source: ${food.recipe.source}</p>
       <p  class="overviewText">Price: $${foodPrices}</p>
       <p  class="overviewText">Cuisine Type: ${food.recipe.cuisineType}</p>
- <a href="../SingleFood/singleFood.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
+ <a href="../SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
 
  <button class="addFood" food_id = "${recipeId}" food_price="${foodPrices}"  > <span class="textCart">Add To Cart</span>
  <span class="spinner-border spinner-border-sm  loader d-none" role="status">
@@ -278,7 +278,7 @@ selectMeal.addEventListener("change", async () => {
       <p  class="overviewText">Source: ${food.recipe.source}</p>
       <p  class="overviewText">Price: $${foodPrices}</p>
       <p  class="overviewText">Cuisine Type: ${food.recipe.cuisineType}</p>
- <a href="../SingleFood/singleFood.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
+ <a href="../SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
 
  <button class="addFood" food_id = "${recipeId}" food_price="${foodPrices}"  > <span class="textCart">Add To Cart</span>
  <span class="spinner-border spinner-border-sm  loader d-none" role="status">
@@ -387,7 +387,7 @@ selectCouisine.addEventListener("change", async () => {
       </p> 
       <p  class="overviewText">Source: ${foods.recipe.source}</p>
       <p  class="overviewText">Price: $${foodPrices}</p>
- <a href="../SingleFood/singleFood.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
+ <a href="../SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
  <button class="addFood" food_id = "${recipeId}" priceId="${foodPrices}"   > <span class="textCart">Add To Cart</span>
  <span class="spinner-border spinner-border-sm  loader d-none" role="status">
   <span class="visually-hidden"></span>
@@ -501,7 +501,7 @@ vegCategorySelect.addEventListener("change", async () => {
       </p> 
       <p  class="overviewText">Source: ${vegs.recipe.source}</p>
       <p  class="overviewText">Price: $${foodPrices}</p>
- <a href="../SingleFood/singleFood.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
+ <a href="../SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
  <button class="addFood" food_id = "${recipeId}" priceId="${foodPrices}"   > <span class="textCart">Add To Cart</span>
  <span class="spinner-border spinner-border-sm  loader d-none" role="status">
   <span class="visually-hidden"></span>
@@ -621,7 +621,7 @@ const foodSearch = async () => {
       <p  class="overviewText">Source: ${food.recipe.source}</p>
       <p  class="overviewText">Price: $${foodPrices}</p>
       <p  class="overviewText">Cuisine Type: ${food.recipe.cuisineType}</p>
- <a href="../SingleFood/singleFood.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
+ <a href="../SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
 
  <button class="addFood" food_id = "${recipeId}" priceId="${foodPrices}"  > <span class="textCart">Add To Cart</span>
  <span class="spinner-border spinner-border-sm  loader d-none" role="status">
