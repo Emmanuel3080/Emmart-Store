@@ -174,7 +174,7 @@ const defualtMeal = async () => {
       <p  class="overviewText">Source: ${food.recipe.source}</p>
       <p  class="overviewText">Price: $${foodPrices}</p>
       <p  class="overviewText">Cuisine Type: ${food.recipe.cuisineType}</p>
- <a href="../SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
+ <a href="./SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
 
  <button class="addFood" food_id = "${recipeId}" food_price="${foodPrices}"  > <span class="textCart">Add To Cart</span>
  <span class="spinner-border spinner-border-sm  loader d-none" role="status">
@@ -278,7 +278,7 @@ selectMeal.addEventListener("change", async () => {
       <p  class="overviewText">Source: ${food.recipe.source}</p>
       <p  class="overviewText">Price: $${foodPrices}</p>
       <p  class="overviewText">Cuisine Type: ${food.recipe.cuisineType}</p>
- <a href="../SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
+ <a href="./SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
 
  <button class="addFood" food_id = "${recipeId}" food_price="${foodPrices}"  > <span class="textCart">Add To Cart</span>
  <span class="spinner-border spinner-border-sm  loader d-none" role="status">
@@ -387,7 +387,7 @@ selectCouisine.addEventListener("change", async () => {
       </p> 
       <p  class="overviewText">Source: ${foods.recipe.source}</p>
       <p  class="overviewText">Price: $${foodPrices}</p>
- <a href="../SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
+ <a href="./SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
  <button class="addFood" food_id = "${recipeId}" priceId="${foodPrices}"   > <span class="textCart">Add To Cart</span>
  <span class="spinner-border spinner-border-sm  loader d-none" role="status">
   <span class="visually-hidden"></span>
@@ -501,7 +501,7 @@ vegCategorySelect.addEventListener("change", async () => {
       </p> 
       <p  class="overviewText">Source: ${vegs.recipe.source}</p>
       <p  class="overviewText">Price: $${foodPrices}</p>
- <a href="../SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
+ <a href="./SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
  <button class="addFood" food_id = "${recipeId}" priceId="${foodPrices}"   > <span class="textCart">Add To Cart</span>
  <span class="spinner-border spinner-border-sm  loader d-none" role="status">
   <span class="visually-hidden"></span>
@@ -621,7 +621,7 @@ const foodSearch = async () => {
       <p  class="overviewText">Source: ${food.recipe.source}</p>
       <p  class="overviewText">Price: $${foodPrices}</p>
       <p  class="overviewText">Cuisine Type: ${food.recipe.cuisineType}</p>
- <a href="../SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
+ <a href="./SingleFood/index.html?foodId=${recipeId}&price=${foodPrices}" class="viewDetails">View Details</a>
 
  <button class="addFood" food_id = "${recipeId}" priceId="${foodPrices}"  > <span class="textCart">Add To Cart</span>
  <span class="spinner-border spinner-border-sm  loader d-none" role="status">
@@ -882,6 +882,9 @@ const showItem = async () => {
   }
 };
 const checkCvv = document.getElementById("checkCvv");
+
+//Popular Meal
+const checkInput = ()=>{
 cardNumber.addEventListener("input", () => {
   // console.log(cardNumber.value);
   if (!(cardNumber.value.length == 16)) {
@@ -890,6 +893,8 @@ cardNumber.addEventListener("input", () => {
   } else {
     checkCard.textContent = "";
     cardNumber.style.borderColor = "green";
+    // window.location.href = "./index.html"
+    
   }
 });
 cvvText.addEventListener("input", () => {
@@ -902,12 +907,16 @@ cvvText.addEventListener("input", () => {
   }
 });
 
-//Popular Meal
-
+} 
+// checkInput()
+document.addEventListener("DOMContentLoaded", checkInput);
 let userItem;
 // const cardNumberss = document.getElementById("cardNumber")
 // const continueShopping = document.querySelector(".")
 const CheckOutItemPayment = async () => {
+
+
+  
   loaadCkeckOut.classList.remove("d-none");
   proceedText.disabled = true;
 
@@ -967,6 +976,7 @@ checkOutForm.addEventListener("submit", (e) => {
   e.preventDefault();
   // alert("lll")
   CheckOutItemPayment();
+  // checkInput()
 });
 const orderBody = document.querySelector(".userOrders");
 const orderText = document.getElementById("orderText");
