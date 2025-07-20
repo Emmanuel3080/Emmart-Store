@@ -74,10 +74,12 @@ const reviewLoader = document.querySelector(".revloader");
 
 const reviewMessage = document.getElementById("reviewMessage");
 const reviewForm = document.getElementById("reviewForm");
-const AppId = "d0c93511";
-const AppKey = `
-2a1156174ad4b9be872456f9225f4ad1
-`;
+const AppId = "cd1be67c";
+// "d0c93511";
+const AppKey =  `6f7c1c5683d6e9a87d3b543ff7550eca`
+// 2a1156174ad4b9be872456f9225f4ad1
+
+
 let myName;
 let foodList = [];
 

@@ -56,8 +56,8 @@ const params = new URLSearchParams(window.location.search);
 const foodId = params.get("foodId");
 const getPrice = params.get("price");
 let userCurrentId;
-const AppId = "d0c93511"; 
-const AppKey = `2a1156174ad4b9be872456f9225f4ad1
+const AppId = "cd1be67c"; 
+const AppKey = `6f7c1c5683d6e9a87d3b543ff7550eca
 `;
 onAuthStateChanged(auth, async (user) => {
   if (user) {
