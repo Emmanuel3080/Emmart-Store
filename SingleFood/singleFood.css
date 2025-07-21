@@ -168,6 +168,30 @@ transform: translateX(-90%);
     margin-top:10rem;
     /* flex-wrap: wrap; */
 }
+/* #logOutBtn{
+
+} */
+#logOutBtn{
+   background-color: #e63946;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#logOutBtn:hover {
+  background-color: #d62828;
+  transform: translateY(-2px);
+}
+
+#logOutBtn:active {
+  transform: scale(0.98);
+  background-color: #b71c1c;
+}
 .singleImg{
     border-radius: 10px;
     width:100%;
