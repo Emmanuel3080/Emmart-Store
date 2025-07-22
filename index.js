@@ -74,9 +74,10 @@ const reviewLoader = document.querySelector(".revloader");
 
 const reviewMessage = document.getElementById("reviewMessage");
 const reviewForm = document.getElementById("reviewForm");
-const AppId = "18e0a9c7";
+const AppId = "b59d76b8";
 // "d0c93511";
-const AppKey =  `bb187016804d9e13cddf1df41ff10476`
+const AppKey =  `
+3d23bff18f48f4bbfb8d6458a8d89f16`
 // 2a1156174ad4b9be872456f9225f4ad1
 
 
